@@ -1,0 +1,36 @@
+Step 1:
+Create Typescript React App
+> npx create-react-app demo --template typescript 
+
+Step 2:
+Install tailwind by using following instruction
+https://tailwindcss.com/docs/guides/create-react-app
+
+Step 3:
+Add prefix for tailwind css
+    Go to tailwind.config.js file-> add Prefix [Check Source Code]
+    prefix: 'tw-',
+
+Step 4:
+Prime React installation
+    4.1 Open Package.json
+        Inside the devDependencies section add following package
+            "primeflex": "^2.0.0",
+            "primeicons": "^4.1.0",
+            "primereact": "^6.5.0",
+            "react-transition-group": "^4.4.2"
+
+        4.1.1 Install above package
+        npm install --save-dev
+
+    4.2
+    Go to Index.css file add following css Property in body tag.
+         background-color:var(--surface-0);
+         color: var(--text-color);
+    4.2
+    Add following import code in the index.tsx file
+        import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
+        //import "primereact/resources/themes/arya-green/theme.css";
+        import "primereact/resources/primereact.min.css";
+        import "primeicons/primeicons.css";
+        import 'primeflex/primeflex.css';
